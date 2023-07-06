@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 // Amplify Flutter Packages
 import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
-import 'package:healthy_competition_app/login_page.dart';
-
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:healthy_competition_app/login/login_page.dart';
 // Generated in previous step
 import 'amplifyconfiguration.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load();
   runApp(const MyApp());
 }
 
