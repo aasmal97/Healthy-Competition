@@ -7,27 +7,14 @@ class LoginPage extends StatelessWidget {
     final loginButton = FloatingActionButton.extended(
         onPressed:() {},
         label: const Text('Sign in'),
-        // icon: Image.asset(
-        //   'assets/images/google_logo.png',
-        //   width: 32,
-        //   height: 32,
-        // ),
-        // backgroundColor: ,
-        // foregroundColor: Colors.black,
       );
     final signUpButton = FloatingActionButton.extended(
         onPressed:() {},
-        label: const Text('Join us'),
-        // icon: Image.asset(
-        //   'assets/images/google_logo.png',
-        //   width: 32,
-        //   height: 32,
-        // ),
+        label: const Text('Join us')
       );
     return Scaffold(
       appBar: AppBar(title: const Text('Login')),
-      // body: Center(
-      //     child: ),
+      body: Column(children: [ signUpButton, loginButton]),
     );
   }
 }
