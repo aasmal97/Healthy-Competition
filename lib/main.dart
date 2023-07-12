@@ -5,10 +5,9 @@ import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
-import "package:healthy_competition_app/loginPage/login_page.dart";
+import 'package:healthy_competition_app/login_page/login_page.dart';
 // Generated in previous step
 import 'amplifyconfiguration.dart';
-
 Future<void> main() async {
   await dotenv.load();
   runApp(const MyApp());
@@ -21,12 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'Healthy Competition',
       theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
       darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
       initialRoute: "/login",
       getPages: [
-        GetPage(name: "/login", page: () => LoginPage())
+        GetPage(name: "/login", page: () => const LoginPage())
         // GetPage(name: "/dashboard", page: () => )
         // GetPage(name: "/groups", page: () => )
         // GetPage(name: "/groups/:id", page: () => )
