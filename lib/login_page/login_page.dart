@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthy_competition_app/utilities/btn_styles.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
   @override
